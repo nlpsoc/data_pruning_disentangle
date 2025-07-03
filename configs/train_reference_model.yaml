@@ -1,0 +1,54 @@
+# Training Arguments
+output_dir: ckpt/cad/ref/microsoft-deberta-v3-large-e10-s0-lr1e-05
+run_name: cad-microsoft-deberta-v3-large-e10-s0-lr1e-05
+overwrite_output_dir: true
+do_train: true
+do_eval: true
+eval_strategy: epoch
+per_device_train_batch_size: 32
+per_device_eval_batch_size: 32
+gradient_accumulation_steps: 1
+learning_rate: !!float 1e-05
+weight_decay: 0
+max_grad_norm: 1.0
+num_train_epochs: 10
+lr_scheduler_type: linear
+warmup_ratio: 0.1
+log_level: passive
+logging_strategy: steps
+logging_first_step: false
+logging_steps: 10
+save_strategy: "no"
+save_only_model: true
+use_cpu: false
+seed: 0
+data_seed: 0
+bf16: true
+tf32: true
+ddp_backend: null
+debug: ''
+optim: adamw_torch
+report_to: wandb
+skip_memory_metrics: true
+resume_from_checkpoint: false
+gradient_checkpointing: false
+gradient_checkpointing_kwargs: {use_reentrant: false}
+
+# Model Arguments
+model_name_or_path: microsoft/deberta-v3-large
+config_name: microsoft/deberta-v3-large
+tokenizer_name: microsoft/deberta-v3-large
+token: 'your huggingface token here'
+
+# Data Argument
+task_name: cad
+train_dataset_name: cad
+overwrite_cache: false
+selected_uid_path: null
+max_seq_length: 300
+lora: false
+qlora: false
+lora_r: 64
+lora_alpha: 16
+lora_dropout: 0.1
+lora_target_modules: all-linear

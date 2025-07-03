@@ -1,0 +1,23 @@
+batch_size: 1
+dataset_name: cad
+dataset_split: train
+grad_proj_dim:
+- 1024
+grad_types:
+- adam
+info_to_collect:
+- grads
+log_level: INFO
+max_seq_length: 300
+model_name: microsoft/deberta-v3-large
+model_type: seq_cls
+model_weights_dir: ckpt/cad/ref/microsoft-deberta-v3-large-e15-s0-lr0.0001-lora-final/checkpoint-8100
+output_dir: ckpt/cad/ref/microsoft-deberta-v3-large-e15-s0-lr0.0001-lora-final/checkpoint-8100/gradient_adam_cad_train
+proj_batch_size: 16
+rep_layers:
+- -1
+save_interval: 160
+seed: 0
+task_name: cad
+use_lora: true
+wandb_name: microsoft-deberta-v3-large-e15-s0-lr0.0001-lora-final-gradient_adam_cad_train-ckpt8100

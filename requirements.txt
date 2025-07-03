@@ -1,0 +1,15 @@
+accelerate
+datasets
+faiss
+numpy
+packaging
+pandas
+peft
+PyYAML
+scikit_learn
+torch
+tqdm
+fast_jl
+traker
+transformers
+wandb
