@@ -41,3 +41,5 @@ python collect_grad_reps.py <YAML_CONFIG>
 To infer the selected data instances, you can use the `subset_inference.py` script. 
 You can similarly use the `train.py` script to retrain the models on the selected data instances by specifying the `--selected_uid_path` argument.
 
+### Toy example 
+Our code for the toy example in Figure 2a can be found at `sampling_toy.ipynb`. 
