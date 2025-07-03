@@ -1,6 +1,6 @@
 # Disentangling the Roles of Representation and Selection in Data Pruning
 
-Here is the code for our ACL 2025 paper "Disentangling the Roles of Representation and Selection in Data Pruning". 
+Here is the code for our ACL 2025 paper "Disentangling the Roles of Representation and Selection in Data Pruning", by Yupei Du, Yingjin Song, Hugh Mee Wong, Daniil Ignatev, Albert Gatt, and Dong Nguyen. 
 
 ## Get Started
 
